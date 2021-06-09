@@ -19,11 +19,11 @@ inputAmount.addEventListener("keydown", function (e) {
 				maximum: 12,
 			},
 			format: {
-				// at least one number, one alphabet and no spacing allowed
-				pattern: "(?=.*[a-z])(?=.*\\d)[a-z\\d]+$",
+				pattern: "[a-z0-9]+",  // number and alphabet combination allowed
+				//pattern: "(?=.*[a-z])(?=.*\\d)[a-z\\d]+$",   // at least one number, one alphabet and no spacing allowed
 				flags: "i", // ignore if the username is uppercase or lowercase
 				message:
-					"should contain at least one alphabet, one number and no spacing between them",
+					"should be only have numbers and alphabets, no spacing between them",
 			},
 		},
 		password: {
@@ -35,11 +35,11 @@ inputAmount.addEventListener("keydown", function (e) {
 				maximum: 50,
 			},
 			format: {
-				// at least one number, one alphabet, one special character and no spacing allowed
-				pattern: "(?=.*[a-z])(?=.*\\d)(?=.*[@$!%*#?&])[a-z\\d@$!%*#?&]+$",
+				pattern: "[a-z\\d@$!%*#?&]+$",    // number, alphabet, special characters allowed
+				//pattern: "(?=.*[a-z])(?=.*\\d)(?=.*[@$!%*#?&])[a-z\\d@$!%*#?&]+$",  // at least one number, one alphabet, one special character and no spacing allowed
 				flags: "i", // ignore if the username is uppercase or lowercase
 				message:
-					"should contain at least one alphabet, one number letter, one special character and no spacing between them",
+					"should be only allowed to enter number, alphabet and special character, no spacing between them",
 			},
 		},
 		"confirm-password": {
@@ -51,11 +51,11 @@ inputAmount.addEventListener("keydown", function (e) {
 				message: "Passwords does not match",
 			},
 			format: {
-				// at least one number, one alphabet, one special character and no spacing allowed
-				pattern: "(?=.*[a-z])(?=.*\\d)(?=.*[@$!%*#?&])[a-z\\d@$!%*#?&]+$",
+				pattern: "[a-z\\d@$!%*#?&]+$",    // number, alphabet, special characters allowed
+				//pattern: "(?=.*[a-z])(?=.*\\d)(?=.*[@$!%*#?&])[a-z\\d@$!%*#?&]+$",  // at least one number, one alphabet, one special character and no spacing allowed
 				flags: "i", // ignore if the username is uppercase or lowercase
 				message:
-					"should contain at least one a-z, one 0-9 letter, one special character and no spacing between them",
+					"should be only allowed to enter number, alphabet and special character, no spacing between them",
 			},
 		},
 		"contact-number": {
