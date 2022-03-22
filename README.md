@@ -1,3 +1,5 @@
+* Note: Press ```Ctrl + F5``` to refresh the page if the page design is not same as the picture below
+
 # Screenshot
 ![image](https://user-images.githubusercontent.com/52247950/121663348-e8a7f480-cad8-11eb-99da-ba68aba8a551.png)
 
